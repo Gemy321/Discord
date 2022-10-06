@@ -1,0 +1,349 @@
+/* Set Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #404EED;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Start Header Nav */
+header nav {
+    background-color: #404EED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding-right: 48px;
+}
+
+header nav .logo img {
+    width: 140px;
+    margin-left: 85px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    color: white;
+    padding: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+header nav button {
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 500px;
+    border-color: transparent;
+    font-size: 12px;
+    margin-right: 75px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+ header nav .logo:hover {
+    cursor: pointer;
+ }
+
+ header nav button:hover {
+    color: #404EED;
+    filter: drop-shadow(1px 12px 11px rgba(0 0 0 / 20%));
+    cursor: pointer;
+ }
+
+/* End Header Nav */
+
+/* Start Landing */
+.landing {
+    background-color: #404EED;
+    height: 68vh;
+    position: relative;
+    background-image: url(/images/pngs/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.landing .container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    margin-top: 50px;
+}
+
+.landing .container .text {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.landing .container .text h1 {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+.landing .container .text p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.landing .buttons {
+    align-items: center;
+    margin: 24px -3px;
+    width: 100%;
+}
+
+.landing .buttons .mac {
+    background-color: white;
+    color: black;
+    padding: 16px 48px;
+    font-size: 18px;
+    width: fit-content;
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: 400;
+    margin-left: 48px;
+    margin-right: 32px;
+}
+
+.landing .buttons .mac i {
+    color: black;
+}
+
+.landing .buttons .open {
+    background-color: #23272a;
+    color: white;
+    padding: 16px 24px;
+    font-size: 18px;
+    width: fit-content;
+    border-color: transparent;
+    border-radius: 100px;
+    font-weight: 400;
+}
+
+/* Landing Imgs */
+
+.landing .imgs-container {
+    position: relative;
+}
+
+.landing .container .left-image img {
+    width: 650px;
+    position: absolute;
+    right: -650px;
+    bottom: -120px;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.landing .container .right-image img {
+    width: 680px;
+    position: absolute;
+    left: -650px;
+    bottom: -90px;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.landing .buttons .mac:hover {
+    color: #404EED;
+    filter: drop-shadow(1px 12px 11px rgba(0 0 0 / 20%));
+    cursor: pointer;
+}
+
+.landing .buttons .open:hover {
+    background-color: #36393E;
+    filter: drop-shadow(1px 12px 11px rgba(0 0 0 / 20%));
+    cursor: pointer;
+}
+/* End Landing */
+
+/* Start Invite */
+
+.invite {
+    padding-top: 80px;
+    width: 100%;
+    height: 80vh;
+}
+
+.invite .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invite .content img {
+    width: 700px;
+    margin-left: 100px;
+}
+
+.invite .content .text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.invite .content .text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.invite .content .text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 300;
+}
+/* End Invite */
+
+/* Start Voice */
+.voice {
+    width: 100%;
+    height: 80vh;
+    padding-top: 80px;
+    background-color: #F6F6F6;
+}
+
+.voice .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voice .content .img img {
+    width: 700px;
+    margin-right: 100px;
+}
+
+.voice .content .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.voice .content .text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.voice .content .text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 300;
+}
+/* End Voice */
+
+/* Start Fandom */
+.fandom {
+    width: 100%;
+    height: 80vh;
+    padding-top: 120px;
+}
+
+.fandom .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fandom .content img {
+    width: 700px;
+    margin-left: 100px;
+}
+
+.fandom .content .text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.fandom .content .text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.fandom .content .text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 300;
+}
+/* End Fandom */
+
+/* start Reliable */
+.reliable {
+    padding-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+
+.reliable .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reliable .content .text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    padding-right: 100px;
+}
+
+.reliable .content .text h1 {
+    font-size: 48px;
+    line-height: 0.5;
+    font-weight: 800;
+    text-align: center;
+}
+
+.reliable .content .text p {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.reliable .content img {
+    width: 1000px;
+}
+/* End Reliable */
